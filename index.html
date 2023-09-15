@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="/script.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
@@ -57,7 +62,7 @@
 
             <ul class="nav__list">
               <li class="nav__list-item"><p class="nav-text">HOME</p></li>
-              <li class="nav__list-item"><p class="nav-text">ABOUT US</p></li>
+              <li class="nav__list-item"><p class="nav-text">ADVATAGES</p></li>
               <li class="nav__list-item">
                 <p class="nav-text">PHOTO GALLERY</p>
               </li>
@@ -75,41 +80,195 @@
       <main class="main">
         <section class="home">
           <div class="container">
-            <div class="slider">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      src="/images/slide-1.jpeg"
-                      alt="sl-1"
-                      class="slide-img"
-                    />
+            <div class="home__inner">
+              <div class="slider">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/slide-1.jpeg"
+                        alt="sl-1"
+                        class="slide-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/slide-2.jpg"
+                        alt="sl-2"
+                        class="slide-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/slide-3.jpg"
+                        alt="sl-3"
+                        class="slide-img"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="/images/slide-4.jpg"
+                        alt="sl-4"
+                        class="slide-img"
+                      />
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="/images/slide-2.jpg"
-                      alt="sl-2"
-                      class="slide-img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="/images/slide-3.jpg"
-                      alt="sl-3"
-                      class="slide-img"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="/images/slide-4.jpg"
-                      alt="sl-4"
-                      class="slide-img"
-                    />
-                  </div>
-                </div>
-                <div class="swiper-button-next"></div>
+                  <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+              <div class="about__us">
+                <h2 class="sect-title">ABOUT US</h2>
+                <img src="/images/title-line.svg" alt="line" class="ti-li" />
+                <p class="sect-p">
+                  Millennium group has a successful, long-term experience in the
+                  construction of resort real estate in many countries. We put
+                  our heart into construction and thanks to our work and
+                  experience a large number of families have found a warm and
+                  reliable home.
+                </p>
+                <p class="sect-p">
+                  As before, the main activity of the company is the
+                  construction, sale and management of real estate. In
+                  construction, we use innovative technologies and pay utmost
+                  attention to details that take into account the tastes and
+                  preferences of customers. All this gives us confidence that we
+                  are moving in the right direction and we are capable of even
+                  more ambitious projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advatages">
+          <div class="container">
+            <div class="advatages__inner">
+              <div class="adva__lists">
+                <div class="adva__list-item">
+                  <h4 class="adva-title">DEVELOPED INFRASTRUCTURE</h4>
+                  <img src="/images/adva-1.webp" alt="adv1" class="adva-img" />
+                  <p class="adva-text" style="margin-bottom: 45px">
+                    Modern infrastructure, hotels, sandy beaches, warm,<br />
+                    clear sea, the beauty of the mountains, the unique <br />
+                    climate, high-class apartment complexes
+                  </p>
+                </div>
+                <div class="adva__list-item">
+                  <h4 class="adva-title">PLACE TO LIVE</h4>
+                  <img src="/images/adva-2.webp" alt="adv2" class="adva-img" />
+                  <p class="adva-text">
+                    The town of Saint Vlas is conveniently located at the <br />
+                    eastern part of the foot of the Balkan Mountains on <br />
+                    the Black Sea coast. Such a good location gives it a <br />
+                    unique climate that combines the purity of mountain <br />
+                    air and the uniqueness of sea breezes.
+                  </p>
+                </div>
+                <div class="adva__list-item">
+                  <h4 class="adva-title">GOOD INVESTMENT</h4>
+                  <img src="/images/adva-3.webp" alt="adv3" class="adva-img" />
+                  <p class="adva-text" style="margin-bottom: 120px">
+                    Possibility of renting out your apartment
+                  </p>
+                </div>
+                <div class="adva__list-item">
+                  <h4 class="adva-title">PREMIUM DESIGN</h4>
+                  <img src="/images/adva-4.webp" alt="adv4" class="adva-img" />
+                  <p class="adva-text">
+                    Our company works with professional interior <br />
+                    designers who will make your apartment truly <br />
+                    unique and meeting your individual needs. You will <br />
+                    be able to choose according to your taste the project <br />
+                    of kitchen, furniture, lighting devices, bathroom <br />
+                    design and other trifles that will create an <br />
+                    atmosphere of peace and comfort.
+                  </p>
+                </div>
+              </div>
+
+              <div class="our__adva">
+                <h2 class="sect-title">OUR ADVATAGES</h2>
+                <img src="/images/title-line.svg" alt="line" class="ti-li" />
+                <div class="nav__adva">
+                  <ul class="nav__adva-list">
+                    <li class="adva-link">PLACE TO LIVE</li>
+                    <li class="adva-link">DEVELOPED INFRASTRUCTURE</li>
+                    <li class="adva-link">PROFITABLE INVESTMENT</li>
+                    <li class="adva-link">ARCHITECTURE</li>
+                    <li class="adva-link">INTERIOR</li>
+                  </ul>
+                </div>
+                <!-- список от 1 до 5 -->
+                <div class="adva__place">
+                  <h4 class="adva__place-title">PLACE TO LIVE</h4>
+                  <p class="adva-place-text">
+                    <strong>Place to live</strong> The town of Saint Vlas is
+                    conveniently located at the eastern part of the foot of the
+                    Balkan Mountains on the Black Sea coast. Sveti Vlas resort
+                    city is a very successful location due to its unique climate
+                    combining the purity of mountain air and the uniqueness of
+                    sea breezes. The life-giving and healing mixture of
+                    iodine-enriched sea and crystal-clear mountain air is
+                    indispensable for the treatment of diseases of the upper
+                    respiratory tract. Suffering from bronchial asthma and other
+                    lung diseases immediately feel an improvement, inhaling such
+                    a natural medicine, which allowed Sveti Vlas to gain a
+                    reputation as a spa resort. Excellent sandy beaches, with a
+                    total length of 1.5 kilometers, will delight anyone, even
+                    the most discerning traveler.
+                  </p>
+                </div>
+                <div class="adva__place">
+                  <h4 class="adva__place-title">DEVELOPED INFRASTRUCTURE</h4>
+                  <p class="adva-place-text">
+                    <strong>Developed infrastructure</strong> In the immediate
+                    vicinity of the complex, within walking distance, there are
+                    shops, ATM, banks, restaurants, playgrounds. There is always
+                    the opportunity to rent a yacht and take a boat trip, visit
+                    the tasting of Bulgarian wines and products. Sveti Vlas is
+                    located just 5 kilometers north of the most famous Bulgarian
+                    Black Sea holiday destination - Sunny Beach, 9 kilometers
+                    from ancient Nessebar and, not least, just 40 kilometers
+                    from Bourgas International Airport.
+                  </p>
+                </div>
+                <div class="adva__place">
+                  <h4 class="adva__place-title">PROFITABLE INVESTMENT</h4>
+                  <p class="adva-place-text">
+                    <strong>Profitable investment</strong> In addition to
+                    acquiring a private apartment at a fashionable Black Sea
+                    resort, eliminating the need to search and book hotel rooms
+                    at the height of the holiday season, the property owner has
+                    the opportunity to earn income from his investment by
+                    renting an apartment. And do not forget that since 2007
+                    Bulgaria is part of the European Union.
+                  </p>
+                </div>
+                <div class="adva__place">
+                  <h4 class="adva__place-title">ARCHITECTURE</h4>
+                  <p class="adva-place-text">
+                    <strong>Architecture</strong> The architecture of the
+                    complex meets all international requirements for energy
+                    efficiency. The complex is built on an individual project
+                    using the most modern technologies and the highest quality
+                    materials. It lacks long corridors and therefore you have
+                    only a few neighbors. The facades of the building will be
+                    lined with the highest quality natural materials including
+                    natural stone and marble.
+                  </p>
+                </div>
+                <div class="adva__place">
+                  <h4 class="adva__place-title">INTERIOR</h4>
+                  <p class="adva-place-text">
+                    <strong>Interior</strong> Many apartments have large
+                    terraces and create a romantic atmosphere. Most apartments
+                    allow you to admire not only a fantastic view of the sea,
+                    but also a mountain landscape. For residents with small
+                    children or pets, it is possible to choose apartments with a
+                    green area under the window and their own separate exit.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -118,6 +277,4 @@
       <footer class="footer"></footer>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="/script.js"></script>
 </html>

@@ -72,6 +72,10 @@ ul {
   height: 40px;
 }
 
+.nav-text {
+  text-transform: uppercase;
+}
+
 .nav__list-item:hover {
   color: #d97b02;
   border-bottom: 2px solid #d97b02;
@@ -86,6 +90,9 @@ ul {
 
 .main {
   margin-top: 80px;
+}
+.ti-li {
+  margin-top: 40px;
 }
 /* Slider styles */
 
@@ -113,4 +120,180 @@ ul {
 
 .slider {
   width: 900px;
+}
+
+.home__inner {
+  display: flex;
+  gap: 10px;
+}
+
+.sect-title {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #d97b02;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sect-p {
+  text-align: center;
+  font-family: "Bitter", serif;
+  color: #50575e;
+  font-size: 16px;
+}
+
+.sect-title {
+  text-transform: uppercase;
+}
+
+.about__us {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .home {
+  display: none;
+} */
+
+/* Секция ADVA */
+
+.advatages__inner {
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(/images/padik.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.adva-img {
+  width: 300px;
+  height: 216px;
+}
+
+.adva__lists {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  justify-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.adva__list-item {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #d97b02;
+  border-radius: 25px 25px 25px 5px;
+}
+
+.adva-title {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #d97b02;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.adva-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #50575e;
+}
+
+.our__adva {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__adva {
+  margin-top: 80px;
+}
+
+.nav__adva-list {
+  display: flex;
+  border: 1px solid #50575e94;
+  border-radius: 4px;
+
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.adva__place-title {
+  margin: 20px 0;
+}
+
+.adva__place-title {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #d97b02;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.adva-place-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #50575e;
+}
+
+.adva-link {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #253d4a;
+}
+
+.adva-link:nth-child(1) {
+  border-right: 1px solid #50575e94;
+}
+
+.adva-link:nth-child(2) {
+  border-right: 1px solid #50575e94;
+}
+
+.adva-link:nth-child(3) {
+  border-right: 1px solid #50575e94;
+}
+
+.adva-link:nth-child(4) {
+  border-right: 1px solid #50575e94;
+}
+
+.adva-link:hover {
+  color: #f5fcff;
+  background-color: #d97b02;
+  cursor: pointer;
+}
+
+.adva__place {
+  width: 89%;
+}
+
+.advatages {
+  display: none;
 }
