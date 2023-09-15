@@ -177,6 +177,7 @@ ul {
 }
 
 .adva-img {
+  border-radius: 10px;
   width: 300px;
   height: 216px;
 }
@@ -444,13 +445,13 @@ ul {
 }
 
 /* The grid: Four equal columns that floats next to each other */
-.plans-column {
-  /* display: flex;
+/* .plans-column {
+  display: flex;
   flex-direction: column;
   float: left;
   width: 25%;
-  padding: 10px; */
-}
+  padding: 10px;
+} */
 
 /* Style the images inside the grid */
 .plans-column img {
@@ -485,6 +486,8 @@ ul {
 .plans-container {
   position: relative;
   display: none;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Expanding image text */
