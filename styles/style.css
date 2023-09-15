@@ -92,7 +92,7 @@ ul {
   margin-top: 80px;
 }
 .ti-li {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /* Slider styles */
 
@@ -226,7 +226,7 @@ ul {
 }
 
 .nav__adva {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .nav__adva-list {
@@ -269,6 +269,8 @@ ul {
 }
 
 .adva-link:nth-child(1) {
+  color: #f5fcff;
+  background-color: #d97b02;
   border-right: 1px solid #50575e94;
 }
 
@@ -296,4 +298,210 @@ ul {
 
 .advatages {
   display: none;
+}
+
+.gallery {
+  display: none;
+}
+
+.gallery__inner {
+  display: grid;
+  gap: 20px;
+  justify-items: start;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 400px;
+}
+
+.gallery-p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #50575e;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+/* .container {
+  position: relative;
+} */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  border-radius: 50px 50px 0 0;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.container__gallery {
+  width: 100%;
+
+  position: relative;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #d97b02;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ff9100;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #d97b02;
+  padding: 2px 16px;
+  color: white;
+}
+.row {
+  display: flex;
+  gap: 5px;
+  padding-top: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* cекция plans */
+
+.plans {
+  display: none;
+}
+
+.plans__inner {
+  display: grid;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.plans-column {
+  /* display: flex;
+  flex-direction: column;
+  float: left;
+  width: 25%;
+  padding: 10px; */
+}
+
+/* Style the images inside the grid */
+.plans-column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.plans-column img:hover {
+  opacity: 1;
+}
+
+.plans__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-around;
+  align-items: start;
+  justify-items: center;
+}
+
+.plans__row img {
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.plans__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.plans-container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
