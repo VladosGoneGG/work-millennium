@@ -508,3 +508,77 @@ ul {
   font-size: 35px;
   cursor: pointer;
 }
+
+/* reviews  */
+
+.reviews {
+  display: none;
+}
+
+.reviews-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reviews__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/arh-4.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.reviwes__videos {
+  width: 70%;
+  padding: 20px;
+}
+
+.reviwes__videos-list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.videos__list-item {
+  display: flex;
+  background-color: #f5fcff;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos__list-item img {
+  position: relative;
+  bottom: 40px;
+  border: 5px solid #d97b02;
+  border-radius: 50%;
+}
+
+.videos__list-item h4 {
+  font-family: "Raleway", sans-serif;
+  color: #d97b02;
+  font-family: 18;
+  font-weight: 700;
+}
+
+.videos__list-item h5 {
+  font-family: "Bitter", serif;
+  color: #50575e;
+  font-family: 16;
+}
+
+.videos__list-item h4,
+.videos__list-item h5 {
+  margin-bottom: 5px;
+}
