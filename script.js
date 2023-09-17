@@ -34,6 +34,14 @@ navItems.forEach((item, index) => {
 
     // Показать только выбранную секцию
     sections[index].style.display = "block";
+
+    // Добавьте код для скрытия формы в футере, если секция "CONTACT US" отображается
+    if (sections[index].id === "contact-us") {
+      document.querySelector(".contact-form-footer").style.display = "none";
+    } else {
+      // В противном случае, покажите форму в футере
+      document.querySelector(".contact-form-footer").style.display = "flex";
+    }
   });
 });
 
