@@ -40,7 +40,7 @@ navItems.forEach((item, index) => {
       document.querySelector(".contact-form-footer").style.display = "none";
     } else {
       // В противном случае, покажите форму в футере
-      document.querySelector(".contact-form-footer").style.display = "flex";
+      document.querySelector(".contact-form-footer").style.display = "grid";
     }
   });
 });
@@ -65,6 +65,16 @@ advaLinks.forEach((link, index) => {
     // Показать div-элемент, соответствующий кликнутому элементу списка
     advaDivs[index].style.display = "block";
   });
+});
+
+// burger
+
+const menuBtn = document.querySelector(".menu__btn-burg");
+const menu = document.querySelector(".nav__list");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("nav__list--active");
+  menuBtn.classList.toggle("active");
 });
 
 // gallery
