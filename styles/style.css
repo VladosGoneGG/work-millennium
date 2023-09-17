@@ -175,6 +175,10 @@ textarea {
 
 /* Секция ADVA */
 
+.advatages {
+  margin-bottom: 10px;
+}
+
 .advatages__inner {
   display: flex;
   gap: 20px;
@@ -316,6 +320,7 @@ textarea {
 
 .gallery {
   display: none;
+  margin-bottom: 10px;
 }
 
 .gallery__inner {
@@ -451,6 +456,7 @@ textarea {
 
 .plans {
   display: none;
+  margin-bottom: 10px;
 }
 
 .plans__inner {
@@ -613,6 +619,19 @@ textarea {
   display: none;
 }
 
+.contact__inner {
+  border-radius: 20px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(/images/ptl-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .us-titl {
   display: flex;
   flex-direction: column;
@@ -630,6 +649,7 @@ textarea {
 .contact-form-page {
   width: 860px;
   gap: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -661,7 +681,7 @@ textarea {
   cursor: pointer;
 }
 
-input {
+.contact-form-page input {
   border: 2px solid #d97b02;
   padding: 5px;
   border-radius: 10px;
@@ -671,7 +691,7 @@ input {
   line-height: 1.6;
 }
 
-textarea {
+.contact-form-page textarea {
   border: 2px solid #d97b02;
   border-radius: 10px;
   padding: 5px;
@@ -724,4 +744,61 @@ textarea {
 .google__map {
   border: 4px solid #d97b02;
   border-radius: 5px;
+}
+
+/* Footer section */
+
+.footer {
+  margin-top: auto;
+  background-color: #a8def7;
+  border-top: 2px solid #d97b02;
+  padding: 20px;
+  position: sticky;
+}
+
+.footer__inner {
+  width: 100%;
+  background-color: #a8def7;
+}
+
+.contact-form-footer input {
+  width: 10%;
+  border: 2px solid #d97b02;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.input-te-f {
+  width: 360px;
+  height: 80%;
+  border: 2px solid #d97b02;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.sub-btn-footer {
+  background-color: #d97b02;
+  color: #f5fcff;
+  align-self: center;
+  height: 40px;
+}
+
+.sub-btn-footer:hover {
+  color: #d97b02;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact-form-footer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
