@@ -629,10 +629,11 @@ textarea {
 
 .contact-form-page {
   width: 860px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .input-nmp {
@@ -646,6 +647,81 @@ textarea {
 }
 
 .sub-btn {
+  background-color: #d97b02;
+  color: #f5fcff;
+  align-self: center;
+  margin-left: 280px;
   width: 150px;
   height: 50px;
+}
+
+.sub-btn:hover {
+  color: #d97b02;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: 2px solid #d97b02;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+textarea {
+  border: 2px solid #d97b02;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.contact-form-page label {
+  font-family: "Montserrat", sans-serif;
+  color: #d97b02;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.con__ad-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.con__ad-list li {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.con__ad-tl {
+  font-family: "Raleway", sans-serif;
+  color: #d97b02;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.con-ad-t {
+  font-family: "Raleway", sans-serif;
+  color: #d97b02;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.google__map {
+  border: 4px solid #d97b02;
+  border-radius: 5px;
 }
