@@ -756,13 +756,20 @@ textarea {
   position: sticky;
 }
 
+.footer__contact {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer__inner {
   width: 100%;
   background-color: #a8def7;
 }
 
 .contact-form-footer input {
-  width: 10%;
+  width: 15%;
   border: 2px solid #d97b02;
   padding: 5px;
   border-radius: 10px;
@@ -771,6 +778,13 @@ textarea {
   font-weight: 400;
   line-height: 1.6;
 }
+
+.contact-form-footer label {
+  color: #d97b02;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .input-te-f {
   width: 360px;
   height: 80%;
@@ -801,4 +815,25 @@ textarea {
   gap: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-fot {
+  display: flex;
+  gap: 20px;
+}
+
+.foot-text {
+  color: #50575e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
