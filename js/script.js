@@ -139,3 +139,55 @@ function myFunction(imgs) {
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
 }
+
+// mail
+
+function sendMail(event) {
+  event.preventDefault();
+  let params = {
+    name: document.getElementById("name").value,
+    tel: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_3z7ej3q";
+  const templateID = "template_jh4pchl";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("your message sent successfully");
+    })
+    .catch((err) => console.log(err));
+}
+
+// mail footer
+
+function sendMailFooter(event) {
+  event.preventDefault();
+  let params = {
+    name: document.getElementById("name-f").value,
+    tel: document.getElementById("phone-f").value,
+    email: document.getElementById("email-f").value,
+  };
+
+  const serviceID = "service_3z7ej3q";
+  const templateID = "template_jh4pchl";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name-f").value = "";
+      document.getElementById("phone-f").value = "";
+      document.getElementById("email-f").value = "";
+      console.log(res);
+      alert("your message sent successfully");
+    })
+    .catch((err) => console.log(err));
+}

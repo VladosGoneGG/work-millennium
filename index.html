@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Millennium</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +22,13 @@
       src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
       defer
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("zx-dR8G9XwD1XgjWO");
+        })();
+    </script>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -616,14 +623,15 @@
                     <form id="contact-form" class="contact-form-page">
                       <input type="hidden" name="contact_number">
                       <label>Name</label>
-                      <input type="text" name="user_name" class="input-nmp">
-                      <label>Email</label>
-                      <input type="tel" name="user_phone" class="input-nmp">
+                      <input type="text" name="user_name" class="input-nmp" id="name">
                       <label>Phone</label>
-                      <input type="email" name="user_email" class="input-nmp">
+                      <input type="tel" name="user_phone" class="input-nmp" id="phone">
+                      <label>Email</label>
+                      <input type="email" name="user_email" class="input-nmp" id="email">
                       <label>Message</label>
-                      <textarea name="message" class="input-te"></textarea>
-                      <input type="submit" value="Send" class="sub-btn">
+                      <textarea name="message" class="input-te" id="message"></textarea>
+                      <!-- <button class="sub-btn" onclick="sendMail()"></button> -->
+                      <input type="submit" onclick="sendMail(event)" value="Send" class="sub-btn">
                     </form>
                 </div>
                 <div class="google__map">
@@ -650,18 +658,18 @@
                     <form id="contact-form" class="contact-form-footer">
                       <input type="hidden" name="contact_number">
                       <label>Name</label>
-                      <input type="text" name="user_name" class="input-nmp">
-                      <label>Email</label>
-                      <input type="tel" name="user_phone" class="input-nmp">
+                      <input type="text" name="user_name" class="input-nmp" id="name-f">
                       <label>Phone</label>
-                      <input type="email" name="user_email" class="input-nmp">
+                      <input type="tel" name="user_phone" class="input-nmp" id="phone-f">
+                      <label>Email</label>
+                      <input type="email" name="user_email" class="input-nmp" id="email-f">
                       <!-- <label>Message</label>
                       <textarea name="message" class="input-te-f"></textarea> -->
                       <div class="icons-fot">
                       <a href="#"><img src="./images/fb-footer.svg" alt="fb-fo"></a>
                       <a href="#"><img src="./images/inst-footer.svg" alt="in-fo"></a>
                       </div>
-                      <input type="submit" value="Send" class="sub-btn-footer">
+                      <input type="submit" onclick="sendMailFooter(event)" value="Send" class="sub-btn-footer">
                     </form>
                 </div>
 

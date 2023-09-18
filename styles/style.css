@@ -56,8 +56,30 @@ textarea {
 .top_leng {
   display: flex;
   float: right;
+  align-items: flex-end;
+  padding: 5px;
   gap: 10px;
   margin-top: 20px;
+  background-color: rgba(255, 174, 68, 0.269);
+  border: 2px solid #def0f8;
+  border-radius: 10px;
+}
+
+.top_leng img {
+  width: 25px;
+  height: 13px;
+}
+
+.contact__list-item:nth-child(4) {
+  background-color: rgba(255, 174, 68, 0.269);
+  border: 2px solid #def0f8;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.contact__list-item:nth-child(4) img {
+  width: 25px;
+  height: 13px;
 }
 
 .top_leng {
@@ -1005,6 +1027,8 @@ textarea {
   .menu__btn-burg {
     display: flex;
     float: right;
+    bottom: 40px;
+    right: 20px;
   }
 
   .menu__btn-burg,
