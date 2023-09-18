@@ -77,6 +77,17 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
 });
 
+// Получите ссылки на элементы навигации
+const navItemsMob = document.querySelectorAll(".nav-text");
+
+// Добавьте обработчики событий для элементов навигации
+navItems.forEach((navItemMob) => {
+  navItemMob.addEventListener("click", () => {
+    // Закройте меню, добавив класс, который скрывает его
+    menu.classList.remove("nav__list--active");
+    menuBtn.classList.remove("active");
+  });
+});
 // gallery
 
 let slideIndex = 1;

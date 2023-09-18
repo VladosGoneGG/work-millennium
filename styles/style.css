@@ -53,6 +53,17 @@ textarea {
   background-color: #f5fcff;
 }
 
+.top_leng {
+  display: flex;
+  float: right;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.top_leng {
+  display: none;
+}
+
 .logo {
   width: 205px;
   height: 125px;
@@ -187,7 +198,7 @@ textarea {
       rgba(255, 255, 255, 0.95),
       rgba(255, 255, 255, 0.95)
     ),
-    url(/images/padik.webp);
+    url(../images/padik.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -553,7 +564,7 @@ textarea {
       rgba(255, 255, 255, 0.814),
       rgba(255, 255, 255, 0.814)
     ),
-    url(/images/arh-4.jpg);
+    url(../images/arh-4.jpg);
 
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -629,7 +640,7 @@ textarea {
       rgba(255, 255, 255, 0.95),
       rgba(255, 255, 255, 0.95)
     ),
-    url(/images/ptl-1.webp);
+    url(../images/ptl-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -888,6 +899,16 @@ textarea {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media (max-width: 1726px) {
+  .adva-link:nth-child(4) {
+    line-height: 3;
+  }
+  .adva-link:nth-child(5) {
+    height: 58px;
+    padding-top: 15px;
+  }
+}
+
 @media (max-width: 1500px) {
   .logo {
     pointer-events: none;
@@ -949,6 +970,10 @@ textarea {
 }
 
 @media (max-width: 860px) {
+  .top_leng {
+    display: flex;
+  }
+
   .about__us {
     margin-bottom: 10px;
   }
@@ -1082,6 +1107,10 @@ textarea {
 
   .contact-form-page {
     width: 100%;
+  }
+
+  .con__ad-tl {
+    display: none;
   }
 }
 
