@@ -144,10 +144,25 @@ function myFunction(imgs) {
 
 function sendMail(event) {
   event.preventDefault();
+
+  // Получите значение поля email
+  const emailValue = document.getElementById("email").value;
+
+  // Проверьте, что emailValue не пуст и соответствует формату email
+  if (emailValue.trim() === "") {
+    alert("Please enter your email address.");
+    return; // Прекратить выполнение функции, если email пуст
+  } else if (!isValidEmail(emailValue)) {
+    alert("Please enter a valid email address.");
+    return; // Прекратить выполнение функции, если email имеет неправильный формат
+  }
+
+  // Если email прошел проверку, продолжайте отправку
+
   let params = {
     name: document.getElementById("name").value,
     tel: document.getElementById("phone").value,
-    email: document.getElementById("email").value,
+    email: emailValue,
     message: document.getElementById("message").value,
   };
 
@@ -162,7 +177,7 @@ function sendMail(event) {
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("your message sent successfully");
+      alert("Your message was sent successfully.");
     })
     .catch((err) => console.log(err));
 }
@@ -171,10 +186,24 @@ function sendMail(event) {
 
 function sendMailFooter(event) {
   event.preventDefault();
+  // Получите значение поля email
+  const emailValue = document.getElementById("email-f").value;
+
+  // Проверьте, что emailValue не пуст и соответствует формату email
+  if (emailValue.trim() === "") {
+    alert("Please enter your email address.");
+    return; // Прекратить выполнение функции, если email пуст
+  } else if (!isValidEmail(emailValue)) {
+    alert("Please enter a valid email address.");
+    return; // Прекратить выполнение функции, если email имеет неправильный формат
+  }
+
+  // Если email прошел проверку, продолжайте отправку
+
   let params = {
     name: document.getElementById("name-f").value,
     tel: document.getElementById("phone-f").value,
-    email: document.getElementById("email-f").value,
+    email: emailValue,
   };
 
   const serviceID = "service_3z7ej3q";
@@ -187,7 +216,14 @@ function sendMailFooter(event) {
       document.getElementById("phone-f").value = "";
       document.getElementById("email-f").value = "";
       console.log(res);
-      alert("your message sent successfully");
+      alert("Your message was sent successfully.");
     })
     .catch((err) => console.log(err));
+}
+
+// Функция для проверки валидности email
+function isValidEmail(email) {
+  // Простейшая проверка формата email с использованием регулярного выражения
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
