@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ge">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
       sizes="16x16"
       href="./favicon-16x16.png"
     />
-    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,6 +46,7 @@
         emailjs.init("zx-dR8G9XwD1XgjWO");
       })();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -76,18 +77,14 @@
                 </a>
               </li>
               <li class="contact__list-item">
-                <a href="#">
-                  <img src="./images/english-ic.svg" alt="eng" />
+                <a href="../index.html">
+                  <img src="./images/english-ic.svg" alt="en" />
                 </a>
                 <a href="./ru/index.html">
-                  <img src="./images/rus-ic.svg" alt="rus" />
+                  <img src="./images/rus-ic.svg" alt="ru" />
                 </a>
                 <a href="#">
-                  <img
-                    src="./images/ger-ic.svg"
-                    alt="ger"
-                    style="width: 27px"
-                  />
+                  <img src="./images/ger-ic.svg" alt="ge" style="width: 27px" />
                 </a>
               </li>
             </ul>
@@ -100,39 +97,18 @@
               <img src="./images/rus-ic.svg" alt="ru" />
             </a>
             <a href="#">
-              <img src="./images/ger-ic.svg" alt="ger" style="width: 27px" />
+              <img src="./images/ger-ic.svg" alt="ge" style="width: 27px" />
             </a>
           </div>
           <div class="logo">
-            <a href="#">
+            <a href="./index.html">
               <img src="./images/logo.svg" alt="logo" class="logo-img" />
             </a>
           </div>
-          <nav class="menu">
-            <button class="menu__btn-burg">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <ul class="nav__list">
-              <li class="nav__list-item"><p class="nav-text">HOME</p></li>
-              <li class="nav__list-item"><p class="nav-text">ADVATAGES</p></li>
-              <li class="nav__list-item">
-                <p class="nav-text">PHOTO GALLERY</p>
-              </li>
-              <li class="nav__list-item">
-                <p class="nav-text">PLANS OF APARTMENTS</p>
-              </li>
-              <li class="nav__list-item"><p class="nav-text">REVIEWS</p></li>
-              <li class="nav__list-item">
-                <p class="nav-text">CONTACT US</p>
-              </li>
-            </ul>
-          </nav>
         </div>
       </header>
       <main class="main">
-        <section class="home">
+        <section class="home" id="section1">
           <div class="container">
             <div class="home__inner">
               <div class="slider">
@@ -173,160 +149,144 @@
                 </div>
               </div>
               <div class="about__us">
-                <h2 class="sect-title">ABOUT US</h2>
-                <img src="./images/title-line.svg" alt="line" class="ti-li" />
                 <p class="sect-p">
-                  Millennium group has a successful, long-term experience in the
-                  construction of resort real estate in many countries. We put
-                  our heart into construction and thanks to our work and
-                  experience a large number of families have found a warm and
-                  reliable home.
-                </p>
-                <p class="sect-p">
-                  As before, the main activity of the company is the
-                  construction, sale and management of real estate. In
-                  construction, we use innovative technologies and pay utmost
-                  attention to details that take into account the tastes and
-                  preferences of customers. All this gives us confidence that we
-                  are moving in the right direction and we are capable of even
-                  more ambitious projects.
+                  Millennium II ist ein neuer Wohnkomplex der Premiumklasse im
+                  ökologisch sauberen Ferienort Sveti Vlas, Bulgarien. Die
+                  Anlage befindet sich in der exklusiven Gegend der Stadt, nur
+                  140 Meter vom goldenen Sandstrand entfernt.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section class="advatages">
+        <section class="contact__us" id="section2">
           <div class="container">
-            <div class="advatages__inner">
-              <div class="adva__lists">
-                <div class="adva__list-item">
-                  <h4 class="adva-title">DEVELOPED INFRASTRUCTURE</h4>
-                  <img src="./images/adva-1.webp" alt="adv1" class="adva-img" />
-                  <p class="adva-text" style="margin-bottom: 45px">
-                    Modern infrastructure, hotels, sandy beaches, warm, clear
-                    sea, the beauty of the mountains, the unique climate,
-                    high-class apartment complexes
-                  </p>
-                </div>
-                <div class="adva__list-item">
-                  <h4 class="adva-title">PLACE TO LIVE</h4>
-                  <img src="./images/adva-2.webp" alt="adv2" class="adva-img" />
-                  <p class="adva-text">
-                    The town of Saint Vlas is conveniently located at the
-                    eastern part of the foot of the Balkan Mountains on the
-                    Black Sea coast. Such a good location gives it a unique
-                    climate that combines the purity of mountain air and the
-                    uniqueness of sea breezes.
-                  </p>
-                </div>
-                <div class="adva__list-item">
-                  <h4 class="adva-title">GOOD INVESTMENT</h4>
-                  <img src="./images/adva-3.webp" alt="adv3" class="adva-img" />
-                  <p class="adva-text" style="margin-bottom: 120px">
-                    Possibility of renting out your apartment
-                  </p>
-                </div>
-                <div class="adva__list-item">
-                  <h4 class="adva-title">PREMIUM DESIGN</h4>
-                  <img src="./images/adva-4.webp" alt="adv4" class="adva-img" />
-                  <p class="adva-text">
-                    Our company works with professional interior designers who
-                    will make your apartment truly unique and meeting your
-                    individual needs. You willbe able to choose according to
-                    your taste the project of kitchen, furniture, lighting
-                    devices, bathroomdesign and other trifles that will create
-                    an atmosphere of peace and comfort.
-                  </p>
-                </div>
-              </div>
-
-              <div class="our__adva">
-                <h2 class="sect-title">OUR ADVATAGES</h2>
+            <div class="contact__inner">
+              <div class="us-titl">
+                <h2 class="sect-title">UNSERE KONTAKTE</h2>
                 <img src="./images/title-line.svg" alt="line" class="ti-li" />
-                <div class="nav__adva">
-                  <ul class="nav__adva-list">
-                    <li class="adva-link">PLACE TO LIVE</li>
-                    <li class="adva-link">DEVELOPED INFRASTRUCTURE</li>
-                    <li class="adva-link">PROFITABLE INVESTMENT</li>
-                    <li class="adva-link">ARCHITECTURE</li>
-                    <li class="adva-link">INTERIOR</li>
+              </div>
+              <div class="con-ad-fr">
+                <div class="con__ad">
+                  <h3 class="con__ad-tl">KONTAKTIERE UNS</h3>
+                  <ul class="con__ad-list">
+                    <li class="ad__list-item">
+                      <img src="./images/ad-ic.svg" alt="" class="ad-ic" />
+                      <h4 class="con-ad-t">ADRESSE</h4>
+                      <p class="con-ad-p">st. Rakovina, Sveti Vlas, Bulgaria</p>
+                    </li>
+                    <li class="ad__list-item">
+                      <img src="./images/ph-ic.svg" alt="" class="ph-ic" />
+                      <h4 class="con-ad-t">TELEFON</h4>
+                      <p class="con-ad-p-or">+359 88 934 7939</p>
+                    </li>
+                    <li class="ad__list-item">
+                      <img src="./images/em-ic.svg" alt="" class="em-ic" />
+                      <h4 class="con-ad-t">POST</h4>
+                      <p class="con-ad-p-or">millennium.bulgaria@gmail.com</p>
+                    </li>
                   </ul>
                 </div>
-                <!-- список от 1 до 5 -->
-                <div class="adva__place">
-                  <h4 class="adva__place-title">PLACE TO LIVE</h4>
-                  <p class="adva-place-text">
-                    <strong>Place to live</strong> The town of Saint Vlas is
-                    conveniently located at the eastern part of the foot of the
-                    Balkan Mountains on the Black Sea coast. Sveti Vlas resort
-                    city is a very successful location due to its unique climate
-                    combining the purity of mountain air and the uniqueness of
-                    sea breezes. The life-giving and healing mixture of
-                    iodine-enriched sea and crystal-clear mountain air is
-                    indispensable for the treatment of diseases of the upper
-                    respiratory tract. Suffering from bronchial asthma and other
-                    lung diseases immediately feel an improvement, inhaling such
-                    a natural medicine, which allowed Sveti Vlas to gain a
-                    reputation as a spa resort. Excellent sandy beaches, with a
-                    total length of 1.5 kilometers, will delight anyone, even
-                    the most discerning traveler.
-                  </p>
-                </div>
-                <div class="adva__place">
-                  <h4 class="adva__place-title">DEVELOPED INFRASTRUCTURE</h4>
-                  <p class="adva-place-text">
-                    <strong>Developed infrastructure</strong> In the immediate
-                    vicinity of the complex, within walking distance, there are
-                    shops, ATM, banks, restaurants, playgrounds. There is always
-                    the opportunity to rent a yacht and take a boat trip, visit
-                    the tasting of Bulgarian wines and products. Sveti Vlas is
-                    located just 5 kilometers north of the most famous Bulgarian
-                    Black Sea holiday destination - Sunny Beach, 9 kilometers
-                    from ancient Nessebar and, not least, just 40 kilometers
-                    from Bourgas International Airport.
-                  </p>
-                </div>
-                <div class="adva__place">
-                  <h4 class="adva__place-title">PROFITABLE INVESTMENT</h4>
-                  <p class="adva-place-text">
-                    <strong>Profitable investment</strong> In addition to
-                    acquiring a private apartment at a fashionable Black Sea
-                    resort, eliminating the need to search and book hotel rooms
-                    at the height of the holiday season, the property owner has
-                    the opportunity to earn income from his investment by
-                    renting an apartment. And do not forget that since 2007
-                    Bulgaria is part of the European Union.
-                  </p>
-                </div>
-                <div class="adva__place">
-                  <h4 class="adva__place-title">ARCHITECTURE</h4>
-                  <p class="adva-place-text">
-                    <strong>Architecture</strong> The architecture of the
-                    complex meets all international requirements for energy
-                    efficiency. The complex is built on an individual project
-                    using the most modern technologies and the highest quality
-                    materials. It lacks long corridors and therefore you have
-                    only a few neighbors. The facades of the building will be
-                    lined with the highest quality natural materials including
-                    natural stone and marble.
-                  </p>
-                </div>
-                <div class="adva__place">
-                  <h4 class="adva__place-title">INTERIOR</h4>
-                  <p class="adva-place-text">
-                    <strong>Interior</strong> Many apartments have large
-                    terraces and create a romantic atmosphere. Most apartments
-                    allow you to admire not only a fantastic view of the sea,
-                    but also a mountain landscape. For residents with small
-                    children or pets, it is possible to choose apartments with a
-                    green area under the window and their own separate exit.
-                  </p>
+                <div class="con_fr">
+                  <form id="contact-form" class="contact-form-page">
+                    <input type="hidden" name="contact_number" />
+                    <label>Vollständiger Name</label>
+                    <input
+                      type="text"
+                      name="user_name"
+                      class="input-nmp"
+                      id="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <label>Telefonnummer</label>
+                    <input
+                      type="tel"
+                      name="user_phone"
+                      class="input-nmp"
+                      id="phone"
+                      placeholder="Telefon"
+                      required
+                    />
+                    <label>E-Mail</label>
+                    <input
+                      type="email"
+                      name="user_email"
+                      class="input-nmp"
+                      id="email"
+                      placeholder="Post"
+                      required
+                    />
+                    <label>Ihre Nachricht</label>
+                    <textarea
+                      name="message"
+                      class="input-te"
+                      id="message"
+                    ></textarea>
+                    <!-- <button class="sub-btn" onclick="sendMail()"></button> -->
+                    <input
+                      type="submit"
+                      onclick="sendMail(event)"
+                      value="OK"
+                      class="sub-btn"
+                    />
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section class="advatages" id="section3">
+          <div class="container">
+            <div class="advatages__inner">
+              <div class="our__adva">
+                <h2 class="sect-title">Vorteile des Komplexes</h2>
+                <img src="./images/title-line.svg" alt="line" class="ti-li" />
+              </div>
+              <div class="adva__complex">
+                <ul class="adva__complex-list">
+                  <li class="complex-item">* Wohnanlage der Premiumklasse</li>
+                  <li class="complex-item">
+                    * 4 Schwimmbäder auf dem Gelände des Komplexes
+                  </li>
+                  <li class="complex-item">
+                    * Kaufmöglichkeit in Ratenzahlung bis zu 2 Jahren
+                  </li>
+                  <li class="complex-item">* Großer SPA-Komplex</li>
+                  <li class="complex-item">
+                    * Offener und überdachter Parkplatz
+                  </li>
+                  <li class="complex-item">
+                    * Rund um die Uhr Videoüberwachung und Sicherheitsdienst
+                  </li>
+                  <li class="complex-item">
+                    * Gemeinsame Lounge-Zone für Gäste
+                  </li>
+                  <li class="complex-item">
+                    * Weniger als 150 Meter vom Strand entfernt
+                  </li>
+                  <li class="complex-item">
+                    * Direkter Kauf vom Bauträger (ohne Vermittler und
+                    Provisionen)
+                  </li>
+                  <li class="complex-item">
+                    * Der Komplex ist zu 80% bewohnt und vollständig
+                    fertiggestellt
+                  </li>
+                  <li class="complex-item">
+                    * Möglichkeit zum Kauf von Wohnungen mit fertiger
+                    Renovierung
+                  </li>
+                  <li class="complex-item">
+                    * Weniger als eine halbe Stunde Fahrt vom internationalen
+                    Flughafen "Burgas" entfernt
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="section4">
           <div class="container">
             <div class="gallery__inner">
               <div class="container__gallery">
@@ -398,7 +358,7 @@
                       src="./images/ptl-1.webp"
                       style="width: 100%"
                       onclick="currentSlide(1)"
-                      alt="place to live"
+                      alt="Ort zum leben"
                     />
                   </div>
                   <div class="column">
@@ -407,7 +367,7 @@
                       src="./images/ptl-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(2)"
-                      alt="place to live"
+                      alt="Ort zum leben"
                     />
                   </div>
                   <div class="column">
@@ -416,7 +376,7 @@
                       src="./images/inter-1.webp"
                       style="width: 100%"
                       onclick="currentSlide(3)"
-                      alt="interior"
+                      alt="Innere"
                     />
                   </div>
                   <div class="column">
@@ -425,7 +385,7 @@
                       src="./images/inter-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(4)"
-                      alt="interior"
+                      alt="Innere"
                     />
                   </div>
                   <div class="column">
@@ -434,7 +394,7 @@
                       src="./images/inter-3.webp"
                       style="width: 100%"
                       onclick="currentSlide(5)"
-                      alt="interior"
+                      alt="Innere"
                     />
                   </div>
                   <div class="column">
@@ -443,7 +403,7 @@
                       src="./images/infra-1.jpg"
                       style="width: 100%"
                       onclick="currentSlide(6)"
-                      alt="Infrastructure"
+                      alt="Infrastruktur"
                     />
                   </div>
                   <div class="column">
@@ -452,7 +412,7 @@
                       src="./images/infra-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(7)"
-                      alt="Infrastructure"
+                      alt="Infrastruktur"
                     />
                   </div>
                   <div class="column">
@@ -461,7 +421,7 @@
                       src="./images/infra-3.webp"
                       style="width: 100%"
                       onclick="currentSlide(8)"
-                      alt="Infrastructure"
+                      alt="Infrastruktur"
                     />
                   </div>
                   <div class="column">
@@ -470,7 +430,7 @@
                       src="./images/infra-4.webp"
                       style="width: 100%"
                       onclick="currentSlide(9)"
-                      alt="Infrastructure"
+                      alt="Infrastruktur"
                     />
                   </div>
                   <div class="column">
@@ -479,131 +439,63 @@
                       src="./images/infra-5.webp"
                       style="width: 100%"
                       onclick="currentSlide(10)"
-                      alt="Infrastructure"
+                      alt="Infrastruktur"
                     />
                   </div>
                 </div>
               </div>
 
               <div class="gallery__text">
-                <h2 class="sect-title">PHOTO GALLERY</h2>
+                <h2 class="sect-title">Aktuelle Informationen</h2>
                 <img src="./images/title-line.svg" alt="line" class="ti-li" />
-                <p class="gallery-p">
-                  Millennium II is a new ultra-modern residential complex
-                  located in an ecologically clean resort town. In a quiet and
-                  peaceful place in Bulgaria, just 140 meters from the golden
-                  sandy beach. However, to be in a noisy atmosphere of fun, in
-                  the city center, a walk will take no more than five
-                  minutes.Millennium II - a new philosophy of life, combining
-                  comfort, a rational approach to detail and aesthetics. The
-                  building was built at a great distance from the neighboring
-                  houses, which creates a feeling of relaxing privacy and
-                  unlimited space, as well as allow you to admire the sunrises
-                  and sunsets from the windows of your living room.
-                </p>
+                <div class="actual__info">
+                  <ul class="actual__info-list">
+                    <li class="actual__list-item">
+                      * Möglichkeit, die Wohnungen mit einer Finanzierung von
+                      30% des Kaufpreises in Ratenzahlung bis zu 2 Jahren zu
+                      erwerben!
+                    </li>
+                    <li class="actual__list-item">
+                      * Wohnungen ab 1418 € pro Quadratmeter!
+                    </li>
+                    <li class="actual__list-item">
+                      * Mehr als 50 Wohnungen verfügbar!
+                    </li>
+                    <li class="actual__list-item">
+                      * Verfügbarkeit von Wohnungen direkt vom Bauträger mit
+                      Renovierung und freier Grundrissgestaltung!
+                    </li>
+                    <li class="actual__list-item">
+                      * Die Möglichkeit, individuelle Reparaturprojekte auf
+                      Bestellung vom Bauträger zu einem reduzierten
+                      Einkaufspreis zu erstellen
+                    </li>
+                    <li class="actual__list-item">
+                      * Möglichkeit, die Renovierung aus der Ferne zu bestellen
+                      und eine fertige Variante bei Ihrer Ankunft zu erhalten.
+                    </li>
+                    <li class="actual__list-item">
+                      * Der Komplex ist ganzjährig in Betrieb und zu 100%
+                      belegt!
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="plans">
-          <div class="container">
-            <div class="plans__inner">
-              <div class="plans__row">
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-1.webp"
-                    alt="pl-1"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-2.webp"
-                    alt="pl-2"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-3.webp"
-                    alt="pl-3"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-4.webp"
-                    alt="pl-4"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-5.webp"
-                    alt="pl-5"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-6.webp"
-                    alt="pl-6"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-7.webp"
-                    alt="pl-7"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-8.webp"
-                    alt="pl-8"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-9.webp"
-                    alt="pl-9"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-                <div class="plans-column">
-                  <img
-                    src="./images/plan-10.webp"
-                    alt="pl-10"
-                    onclick="myFunction(this)"
-                  />
-                </div>
-              </div>
-              <div class="plans-container">
-                <span
-                  onclick="this.parentElement.style.display='none'"
-                  class="closebtn"
-                  >&times;</span
-                >
-                <img id="expandedImg" style="width: 100%" />
-                <div id="imgtext"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="reviews">
+        <section class="reviews" id="section5">
           <div class="container">
             <div class="reviews__inner">
               <div class="reviews-title">
-                <h2 class="sect-title">REVIEWS</h2>
+                <h2 class="sect-title">Rezensionen</h2>
                 <img src="./images/title-line.svg" alt="line" class="ti-li" />
               </div>
               <div class="reviwes__videos">
                 <ul class="reviwes__videos-list">
                   <li class="videos__list-item">
                     <img src="./images/star.webp" alt="star" />
-                    <h4>ELINA AND YURI</h4>
+                    <h4>Elena und Yuri</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -617,7 +509,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="./images/star.webp" alt="star" />
-                    <h4>FAMILY FROM MOSCOW</h4>
+                    <h4>Familie aus Moskau</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -631,7 +523,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="./images/star.webp" alt="star" />
-                    <h4>RITA FROM ARKHANGELSK</h4>
+                    <h4>Rita aus Archangelsk</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -645,7 +537,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="./images/star.webp" alt="star" />
-                    <h4>NATALIA FROM KOROLEV</h4>
+                    <h4>Natalia aus Koroljow</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -662,92 +554,20 @@
             </div>
           </div>
         </section>
-        <section class="contact__us" id="contact-us">
+        <section class="maps" id="section6">
           <div class="container">
-            <div class="contact__inner">
-              <div class="us-titl">
-                <h2 class="sect-title">CONTACT US</h2>
-                <img src="./images/title-line.svg" alt="line" class="ti-li" />
-              </div>
-              <div class="con-ad-fr">
-                <div class="con__ad">
-                  <h3 class="con__ad-tl">CONTACT US</h3>
-                  <ul class="con__ad-list">
-                    <li class="ad__list-item">
-                      <img src="./images/ad-ic.svg" alt="" class="ad-ic" />
-                      <h4 class="con-ad-t">ADDRESS</h4>
-                      <p class="con-ad-p">st. Rakovina, Sveti Vlas, Bulgaria</p>
-                    </li>
-                    <li class="ad__list-item">
-                      <img src="./images/ph-ic.svg" alt="" class="ph-ic" />
-                      <h4 class="con-ad-t">PHONE</h4>
-                      <p class="con-ad-p-or">+359 88 934 7939</p>
-                    </li>
-                    <li class="ad__list-item">
-                      <img src="./images/em-ic.svg" alt="" class="em-ic" />
-                      <h4 class="con-ad-t">EMAIL</h4>
-                      <p class="con-ad-p-or">millennium.bulgaria@gmail.com</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="con_fr">
-                  <form id="contact-form" class="contact-form-page">
-                    <input type="hidden" name="contact_number" />
-                    <label>Name</label>
-                    <input
-                      type="text"
-                      name="user_name"
-                      class="input-nmp"
-                      placeholder="Name"
-                      id="name"
-                      required
-                    />
-                    <label>Phone</label>
-                    <input
-                      type="tel"
-                      name="user_phone"
-                      class="input-nmp"
-                      id="phone"
-                      placeholder="Phone"
-                      required
-                    />
-                    <label>Email</label>
-                    <input
-                      type="email"
-                      name="user_email"
-                      class="input-nmp"
-                      placeholder="Mail"
-                      id="email"
-                      required
-                    />
-                    <label>Message</label>
-                    <textarea
-                      name="message"
-                      class="input-te"
-                      id="message"
-                      placeholder="Message"
-                    ></textarea>
-                    <!-- <button class="sub-btn" onclick="sendMail()"></button> -->
-                    <input
-                      type="submit"
-                      onclick="sendMail(event)"
-                      value="Send"
-                      class="sub-btn"
-                    />
-                  </form>
-                </div>
-                <div class="google__map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.636486625194!2d27.7475809767494!3d42.71141731283057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69fd89eaba35b%3A0x4fd4b8c2d082f3bc!2sMILLENNIUM%20II!5e0!3m2!1sru!2s!4v1694941513711!5m2!1sru!2s"
-                    width="450"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
-                </div>
+            <div class="maps__inner">
+              <div class="google__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.636486625194!2d27.7475809767494!3d42.71141731283057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69fd89eaba35b%3A0x4fd4b8c2d082f3bc!2sMILLENNIUM%20II!5e0!3m2!1sru!2s!4v1694941513711!5m2!1sru!2s"
+                  width="1200"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
               </div>
             </div>
           </div>
@@ -755,53 +575,6 @@
       </main>
       <footer class="footer">
         <div class="footer__inner">
-          <div class="footer__contact">
-            <form id="contact-form" class="contact-form-footer">
-              <input type="hidden" name="contact_number" />
-              <label>Name</label>
-              <input
-                type="text"
-                name="user_name"
-                class="input-nmp"
-                id="name-f"
-                placeholder="Name"
-                required
-              />
-              <label>Phone</label>
-              <input
-                type="tel"
-                name="user_phone"
-                class="input-nmp"
-                id="phone-f"
-                placeholder="Phone"
-                required
-              />
-              <label>Email</label>
-              <input
-                type="email"
-                name="user_email"
-                class="input-nmp"
-                id="email-f"
-                placeholder="Mail"
-                required
-              />
-              <!-- <label>Message</label>
-                      <textarea name="message" class="input-te-f"></textarea> -->
-              <div class="icons-fot">
-                <a href="#"><img src="./images/fb-footer.svg" alt="fb-fo" /></a>
-                <a href="#"
-                  ><img src="./images/inst-footer.svg" alt="in-fo"
-                /></a>
-              </div>
-              <input
-                type="submit"
-                onclick="sendMailFooter(event)"
-                value="Send"
-                class="sub-btn-footer"
-              />
-            </form>
-          </div>
-
           <div class="footer__icons">
             <p class="foot-text">© 2022 Millennium All Right Reserved</p>
           </div>
