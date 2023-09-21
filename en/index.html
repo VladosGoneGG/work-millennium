@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,7 +66,7 @@
                   alt="phone"
                   class="phone-ic"
                 />
-                <p>+359 88 934 7939</p>
+                <p><a href="tel:+359889347939">+359 88 934 7939</a></p>
               </li>
               <li class="contact__list-item">
                 <a href="#">
@@ -81,10 +81,10 @@
                 </a>
               </li>
               <li class="contact__list-item">
-                <a href="../en/index.html">
+                <a href="#">
                   <img src="../images/english-ic.svg" alt="en" />
                 </a>
-                <a href="#">
+                <a href="../ru/index.html">
                   <img src="../images/rus-ic.svg" alt="ru" />
                 </a>
                 <a href="../index.html">
@@ -98,10 +98,10 @@
             </ul>
           </div>
           <div class="top_leng">
-            <a href="../en/index.html">
+            <a href="#">
               <img src="../images/english-ic.svg" alt="en" />
             </a>
-            <a href="#">
+            <a href="../ru/index.html">
               <img src="../images/rus-ic.svg" alt="ru" />
             </a>
             <a href="../index.html">
@@ -123,16 +123,16 @@
           </button>
           <ul class="nav__list">
             <li id="link-1" class="nav__list-item">
-              <p class="nav-text">ГЛАВНАЯ</p>
+              <p class="nav-text">HOME</p>
             </li>
             <li id="link-2" class="nav__list-item">
-              <p class="nav-text">НАШИ КОНТАКТЫ</p>
+              <p class="nav-text">our contacts</p>
             </li>
             <li id="link-3" class="nav__list-item">
-              <p class="nav-text">ГАЛЕРЕЯ ФОТО</p>
+              <p class="nav-text">PHOTO GALLERY</p>
             </li>
             <li id="link-5" class="nav__list-item">
-              <p class="nav-text">ОТЗЫВЫ</p>
+              <p class="nav-text">reviews</p>
             </li>
           </ul>
         </nav>
@@ -180,10 +180,10 @@
               </div>
               <div class="about__us">
                 <p class="sect-p">
-                  Millennium II - новый жилой комплекс уровня “Premium Class”,
-                  расположенный в экологически чистом курортном городе «Святой
-                  Влас», Болгария. Комплекс расположен в элитном районе города,
-                  в 140 метрах от золотистого песочного пляжа.
+                  Millennium II - is a new residential complex of the "Premium
+                  Class" level, located in the ecologically clean resort town of
+                  Svyatoy Vlas", Bulgaria. The complex is located in an elite
+                  area of the city, 140 meters from the golden sandy beach.
                 </p>
               </div>
             </div>
@@ -193,26 +193,26 @@
           <div class="container">
             <div class="contact__inner">
               <div class="us-titl">
-                <h2 class="sect-title">НАШИ КОНТАКТЫ</h2>
+                <h2 class="sect-title">OUR CONTACTS</h2>
                 <img src="../images/title-line.svg" alt="line" class="ti-li" />
               </div>
               <div class="con-ad-fr">
                 <div class="con__ad">
-                  <h3 class="con__ad-tl">СВЯЖИТЕСЬ С НАМИ</h3>
+                  <h3 class="con__ad-tl">CONTACT US</h3>
                   <ul class="con__ad-list">
                     <li class="ad__list-item">
                       <img src="../images/ad-ic.svg" alt="" class="ad-ic" />
-                      <h4 class="con-ad-t">АДРЕС</h4>
+                      <h4 class="con-ad-t">ADDRESS</h4>
                       <p class="con-ad-p">st. Rakovina, Sveti Vlas, Bulgaria</p>
                     </li>
                     <li class="ad__list-item">
                       <img src="../images/ph-ic.svg" alt="" class="ph-ic" />
-                      <h4 class="con-ad-t">ТЕЛЕФОН</h4>
+                      <h4 class="con-ad-t">TELEPHONE</h4>
                       <p><a href="tel:+359889347939">+359 88 934 7939</a></p>
                     </li>
                     <li class="ad__list-item">
                       <img src="../images/em-ic.svg" alt="" class="em-ic" />
-                      <h4 class="con-ad-t">ПОЧТА</h4>
+                      <h4 class="con-ad-t">EMAIL</h4>
                       <p class="con-ad-p-or">millennium.bulgaria@gmail.com</p>
                     </li>
                   </ul>
@@ -220,45 +220,45 @@
                 <div class="con_fr">
                   <form id="contact-form" class="contact-form-page">
                     <input type="hidden" name="contact_number" />
-                    <label>Полное имя</label>
+                    <label>Full name</label>
                     <input
                       type="text"
                       name="user_name"
                       class="input-nmp"
                       id="name"
-                      placeholder="Имя"
+                      placeholder="Name"
                       required
                     />
-                    <label>Номер телефона</label>
+                    <label>Phone number</label>
                     <input
                       type="tel"
                       name="user_phone"
                       class="input-nmp"
                       id="phone"
-                      placeholder="Телефон"
+                      placeholder="Telephone"
                       required
                     />
-                    <label>Электронная почта</label>
+                    <label>E-mail</label>
                     <input
                       type="email"
                       name="user_email"
                       class="input-nmp"
                       id="email"
-                      placeholder="Почта"
+                      placeholder="Email"
                       required
                     />
-                    <label>Сообщение</label>
+                    <label>Message</label>
                     <textarea
                       name="message"
                       class="input-te"
                       id="message"
-                      placeholder="Ваше сообщение"
+                      placeholder="Your message"
                     ></textarea>
                     <!-- <button class="sub-btn" onclick="sendMail()"></button> -->
                     <input
                       type="submit"
                       onclick="sendMail(event)"
-                      value="Отправить"
+                      value="Send"
                       class="sub-btn"
                     />
                   </form>
@@ -271,41 +271,46 @@
           <div class="container">
             <div class="advatages__inner">
               <div class="our__adva">
-                <h2 class="sect-title">Преимущества комплекса</h2>
+                <h2 class="sect-title">Advantages of the complex</h2>
                 <img src="../images/title-line.svg" alt="line" class="ti-li" />
               </div>
               <div class="adva__complex">
                 <ul class="adva__complex-list">
-                  <li class="complex-item">Жилой комплекс «Premium Class”</li>
                   <li class="complex-item">
-                    На территории комплекса 4 бассейна
+                    Residential complex "Premium Class"
                   </li>
                   <li class="complex-item">
-                    Возможность покупки В РАССРОЧКУ до 2 лет
-                  </li>
-                  <li class="complex-item">Большой SPA-комплекс</li>
-                  <li class="complex-item">Открытый и крытый паркинг</li>
-                  <li class="complex-item">
-                    Круглосуточное видео наблюдение и охрана
+                    There are 4 swimming pools on the territory of the complex
                   </li>
                   <li class="complex-item">
-                    Общая лаундж-зона для встречи гостей
+                    Possibility of purchase in installments up to 2 years
+                  </li>
+                  <li class="complex-item">Large SPA complex</li>
+                  <li class="complex-item">Outdoor and indoor parking</li>
+                  <li class="complex-item">
+                    Round-the-clock video surveillance and security
                   </li>
                   <li class="complex-item">
-                    Менее 150 метров от морского пляжа
+                    Shared lounge area for meeting guests
                   </li>
                   <li class="complex-item">
-                    Прямая покупка от застройщика (без посредников и
-                    комиссионных)
+                    Less than 150 meters from the sea beach
                   </li>
                   <li class="complex-item">
-                    Комплекс полностью застроен и заселён на 80% жильцами
+                    Direct purchase from the developer (without intermediaries
+                    and commissions)
                   </li>
                   <li class="complex-item">
-                    Возможность покупки квартир с ремонтом в готовом варианте
+                    The complex is fully built up and inhabited by 80% of
+                    residents
                   </li>
                   <li class="complex-item">
-                    Менее полу часа езды от международного аэропорта «Бургас»
+                    The possibility of buying renovated apartments in a
+                    ready-made version
+                  </li>
+                  <li class="complex-item">
+                    Less than an hour and a half drive from the international
+                    airport "Burgas"
                   </li>
                 </ul>
               </div>
@@ -384,7 +389,7 @@
                       src="../images/ptl-1.webp"
                       style="width: 100%"
                       onclick="currentSlide(1)"
-                      alt="место для жизни"
+                      alt="a place to live"
                     />
                   </div>
                   <div class="column">
@@ -393,7 +398,7 @@
                       src="../images/ptl-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(2)"
-                      alt="место для жизни"
+                      alt="a place to live"
                     />
                   </div>
                   <div class="column">
@@ -402,7 +407,7 @@
                       src="../images/inter-1.webp"
                       style="width: 100%"
                       onclick="currentSlide(3)"
-                      alt="интерьер"
+                      alt="interior"
                     />
                   </div>
                   <div class="column">
@@ -411,7 +416,7 @@
                       src="../images/inter-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(4)"
-                      alt="интерьер"
+                      alt="interior"
                     />
                   </div>
                   <div class="column">
@@ -420,7 +425,7 @@
                       src="../images/inter-3.webp"
                       style="width: 100%"
                       onclick="currentSlide(5)"
-                      alt="интерьер"
+                      alt="interior"
                     />
                   </div>
                   <div class="column">
@@ -429,7 +434,7 @@
                       src="../images/infra-1.jpg"
                       style="width: 103%"
                       onclick="currentSlide(6)"
-                      alt="инфраструктура"
+                      alt="infrastructure"
                     />
                   </div>
                   <div class="column">
@@ -438,7 +443,7 @@
                       src="../images/infra-2.webp"
                       style="width: 100%"
                       onclick="currentSlide(7)"
-                      alt="инфраструктура"
+                      alt="infrastructure"
                     />
                   </div>
                   <div class="column">
@@ -447,7 +452,7 @@
                       src="../images/infra-3.webp"
                       style="width: 100%"
                       onclick="currentSlide(8)"
-                      alt="инфраструктура"
+                      alt="infrastructure"
                     />
                   </div>
                   <div class="column">
@@ -456,7 +461,7 @@
                       src="../images/infra-4.webp"
                       style="width: 100%"
                       onclick="currentSlide(9)"
-                      alt="инфраструктура"
+                      alt="infrastructure"
                     />
                   </div>
                   <div class="column">
@@ -465,41 +470,42 @@
                       src="../images/infra-5.webp"
                       style="width: 100%"
                       onclick="currentSlide(10)"
-                      alt="инфраструктура"
+                      alt="infrastructure"
                     />
                   </div>
                 </div>
               </div>
 
               <div class="gallery__text">
-                <h2 class="sect-title">Актуальная Информация</h2>
+                <h2 class="sect-title">CURRENT INFORMATION</h2>
                 <img src="../images/title-line.svg" alt="line" class="ti-li" />
                 <div class="actual__info">
                   <ul class="actual__info-list">
                     <li class="actual__list-item">
-                      Возможность приобретения с бюджетом в 30% от стоимости
-                      апартаментов в рассрочку до 2х лет!
+                      The possibility of purchasing with a budget of 30% of the
+                      cost of apartments in installments up to 2 years!
                     </li>
                     <li class="actual__list-item">
-                      Апартаменты от 1418€ за квадратный ментр! <br />
-                      В наличии более 50ти апартаментов!
+                      Apartments from 1418€ per square meter! There are more
+                      than 50 apartments available!
                     </li>
                     <li class="actual__list-item">
-                      В наличии апартаменты от застройщика <br />
-                      с ремнонтом и под свободную планировку!
+                      In the presence of apartments from the developer with a
+                      remnant <br />
+                      and for a free layout!
                     </li>
                     <li class="actual__list-item">
-                      Возможность создания индивидуального проекта <br />
-                      ремонта под заказ от застройщика по заниженным ценам
-                      закупки
+                      The possibility of creating an individual repair project
+                      to order from the developer at discounted purchase prices
                     </li>
                     <li class="actual__list-item">
-                      Возможность удалённо заказать ремонт и получить готовый
-                      вариант к Вашему приезду
+                      The ability to remotely order repairs and get a ready
+                      -made <br />
+                      version for your arrival
                     </li>
                     <li class="actual__list-item">
-                      Комплекс функционирует и наполнен жильцами 12 месяцев в
-                      году!
+                      The complex functions and is filled with residents 12
+                      months a year!
                     </li>
                   </ul>
                 </div>
@@ -511,14 +517,14 @@
           <div class="container">
             <div class="reviews__inner">
               <div class="reviews-title">
-                <h2 class="sect-title">Отзывы довольных клиентов</h2>
+                <h2 class="sect-title">REVIEWS</h2>
                 <img src="../images/title-line.svg" alt="line" class="ti-li" />
               </div>
               <div class="reviwes__videos">
                 <ul class="reviwes__videos-list">
                   <li class="videos__list-item">
                     <img src="../images/star.webp" alt="star" />
-                    <h4>Елена и Юрий</h4>
+                    <h4>Elena and Yuri</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -532,7 +538,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="../images/star.webp" alt="star" />
-                    <h4>Семья из Москвы</h4>
+                    <h4>Family from Moscow</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -546,7 +552,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="../images/star.webp" alt="star" />
-                    <h4>Рита из Архангельска</h4>
+                    <h4>Rita from Arkhangelsk</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"
@@ -560,7 +566,7 @@
                   </li>
                   <li class="videos__list-item">
                     <img src="../images/star.webp" alt="star" />
-                    <h4>Наталья из Королева</h4>
+                    <h4>Natalia from Korolev</h4>
                     <h5>About Millennium</h5>
                     <iframe
                       width="560"

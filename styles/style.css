@@ -22,6 +22,9 @@ body {
   /* font-family: 'Raleway', sans-serif;
   font-family: 'Bitter', serif; */
 }
+body.scroll {
+  overflow: hidden;
+}
 
 ul {
   list-style: none;
@@ -38,6 +41,11 @@ textarea {
   border: none;
   outline: none;
   resize: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .wrapper {
@@ -126,6 +134,7 @@ textarea {
 .ti-li {
   margin-bottom: 40px;
 }
+
 /* Slider styles */
 
 .swiper {
@@ -194,7 +203,7 @@ textarea {
 /* Секция ADVA */
 
 .advatages {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -525,6 +534,10 @@ textarea {
 
 /* Contact us */
 
+.nav-text {
+  text-transform: uppercase;
+}
+
 .contact__us {
   margin-top: 100px;
 }
@@ -742,6 +755,43 @@ textarea {
     border-right: none;
   }
 }
+.nav__list {
+  display: none;
+}
+/* Burger menu */
+
+.menu__btn-burg {
+  width: 25px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__btn-burg span {
+  width: 100%;
+  height: 2px;
+  background-color: #d97b02;
+}
+
+.menu__btn-burg.active span:nth-child(1) {
+  width: 32px;
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu__btn-burg.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__btn-burg.active span:nth-child(3) {
+  width: 32px;
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 @media (max-width: 1300px) {
   .nav__list {
@@ -813,10 +863,6 @@ textarea {
     display: none;
   }
 
-  .nav__list {
-    display: none;
-  }
-
   .nav__list--active {
     display: flex;
     position: absolute;
@@ -826,11 +872,10 @@ textarea {
     justify-content: center;
     background-color: #f5fcff;
     top: 0;
-    left: 0;
-    height: 100vw;
-    padding-top: 100px;
     right: 0;
     bottom: 0;
+    left: 0;
+    padding-top: 100px;
     align-items: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -848,10 +893,6 @@ textarea {
   .nav__list--active li {
     display: flex;
     flex-direction: column;
-  }
-
-  .our__adva {
-    display: none;
   }
 
   .adva__lists {

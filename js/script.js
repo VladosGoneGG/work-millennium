@@ -16,22 +16,17 @@ let swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 // gallery
-
 let slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -53,31 +48,37 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+  // burger
+const menuBtn = document.querySelector(".menu__btn-burg");
+const menu = document.querySelector(".nav__list");
+const body = document.querySelector("body");
+
+menuBtn.addEventListener("click", () =>  toogleBurger());
+
+const toogleBurger = () => {
+   menu.classList.toggle("nav__list--active");
+  menuBtn.classList.toggle("active");
+  body.classList.toggle("scroll");
+}
 
 // mail
-
 function sendMail(event) {
   event.preventDefault();
 
   // Получите значение поля email
-  const emailValue = document.getElementById("email").value;
-
-  // Проверьте, что emailValue не пуст и соответствует формату email
-  if (emailValue.trim() === "") {
-    alert("Please enter your email address.");
-    return; // Прекратить выполнение функции, если email пуст
-  } else if (!isValidEmail(emailValue)) {
-    alert("Please enter a valid email address.");
-    return; // Прекратить выполнение функции, если email имеет неправильный формат
+  const name = $("#name").val();
+  const tel = $("#phone").val();
+  const email = $("#email").val();
+  const message = $("#message").val();
+  if(!name || !tel || !email || !message){
+    alert("Enter all fields");
+    return;
   }
-
-  // Если email прошел проверку, продолжайте отправку
-
   let params = {
-    name: document.getElementById("name").value,
-    tel: document.getElementById("phone").value,
-    email: emailValue,
-    message: document.getElementById("message").value,
+    name,
+    tel,
+    email,
+    message,
   };
 
   const serviceID = "service_3z7ej3q";
@@ -86,75 +87,23 @@ function sendMail(event) {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("phone").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      console.log(res);
-      alert("Your message was sent successfully.");
+      $("#name").val("");
+      $("#phone").val("");
+      $("#email").val("");
+      $("#message").val("");
+      alert("Email has been sent");
     })
     .catch((err) => console.log(err));
 }
 
-$(document).ready(function () {
-  // Получаем высоту заголовка (header)
-  var headerHeight = $(".header").outerHeight();
-
-  // Определяем массив классов секций на странице, которые вы хотите учитывать
-  var sectionClasses = [
-    ".home",
-    ".contact__us",
-    ".advatages",
-    ".gallery",
-    ".reviews",
-    ".maps",
-  ]; // Замените этот список на ваши классы секций
-  var currentIndex = 0; // Текущий индекс секции
-  var isScrolling = false; // Флаг для отслеживания анимации прокрутки
-
-  // Обработчик события прокрутки колесиком мыши
-  $(window).on("wheel", function (event) {
-    event.preventDefault(); // Отменяем стандартное поведение прокрутки
-
-    // Если анимация прокрутки уже активна, не выполняем новую прокрутку
-    if (isScrolling) {
-      return;
-    }
-
-    // Определяем направление прокрутки (вверх или вниз)
-    var delta = event.originalEvent.deltaY;
-    var newIndex;
-
-    // Если прокручиваем вниз
-    if (delta > 0) {
-      newIndex = currentIndex + 1;
-    } else {
-      newIndex = currentIndex - 1;
-    }
-
-    // Проверяем, чтобы новый индекс находился в пределах массива секций
-    if (newIndex >= 0 && newIndex < sectionClasses.length) {
-      currentIndex = newIndex;
-      scrollToSection(currentIndex);
-    }
-  });
-
-  // Функция для плавной прокрутки к указанной секции
-  function scrollToSection(index) {
-    var targetSection = $(sectionClasses[index]);
-    var scrollTo = targetSection.offset().top - headerHeight;
-
-    // Выполняем плавную прокрутку к новой секции
-    isScrolling = true; // Устанавливаем флаг анимации прокрутки
-    $("html, body").animate(
-      {
-        scrollTop: scrollTo,
-      },
-      800,
-      function () {
-        // По завершению анимации снимаем флаг анимации прокрутки
-        isScrolling = false;
-      }
-    );
+function offSetTop(selector){
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(selector).offset().top
+    }, 2000);
+    toogleBurger();
   }
-});
+
+ $("#link-1").click(() => offSetTop("#section1"));
+ $("#link-2").click(() => offSetTop("#section2"));
+ $("#link-3").click(() => offSetTop("#section4"));
+ $("#link-5").click(() => offSetTop("#section5"));
