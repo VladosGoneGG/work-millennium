@@ -96,4 +96,54 @@ function sendMail(event) {
     .catch((err) => console.log(err));
 }
 
-// mail footer
+$(document).ready(function () {
+  // Получаем высоту заголовка (header)
+  var headerHeight = $(".header").outerHeight();
+
+  // Определяем массив классов секций на странице, которые вы хотите учитывать
+  var sectionClasses = [
+    ".home",
+    ".contact__us",
+    ".advatages",
+    ".gallery",
+    ".reviews",
+    ".maps",
+  ]; // Замените этот список на ваши классы секций
+  var currentIndex = 0; // Текущий индекс секции
+
+  // Обработчик события прокрутки колесиком мыши
+  $(window).on("wheel", function (event) {
+    event.preventDefault(); // Отменяем стандартное поведение прокрутки
+
+    // Определяем направление прокрутки (вверх или вниз)
+    var delta = event.originalEvent.deltaY;
+    var newIndex;
+
+    // Если прокручиваем вниз
+    if (delta > 0) {
+      newIndex = currentIndex + 1;
+    } else {
+      newIndex = currentIndex - 1;
+    }
+
+    // Проверяем, чтобы новый индекс находился в пределах массива секций
+    if (newIndex >= 0 && newIndex < sectionClasses.length) {
+      currentIndex = newIndex;
+      scrollToSection(currentIndex);
+    }
+  });
+
+  // Функция для плавной прокрутки к указанной секции
+  function scrollToSection(index) {
+    var targetSection = $(sectionClasses[index]);
+    var scrollTo = targetSection.offset().top - headerHeight;
+
+    // Выполняем плавную прокрутку к новой секции
+    $("html, body").animate(
+      {
+        scrollTop: scrollTo,
+      },
+      800
+    ); // 800 - время анимации в миллисекундах
+  }
+});
