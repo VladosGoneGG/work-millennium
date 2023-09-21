@@ -110,10 +110,16 @@ $(document).ready(function () {
     ".maps",
   ]; // Замените этот список на ваши классы секций
   var currentIndex = 0; // Текущий индекс секции
+  var isScrolling = false; // Флаг для отслеживания анимации прокрутки
 
   // Обработчик события прокрутки колесиком мыши
   $(window).on("wheel", function (event) {
     event.preventDefault(); // Отменяем стандартное поведение прокрутки
+
+    // Если анимация прокрутки уже активна, не выполняем новую прокрутку
+    if (isScrolling) {
+      return;
+    }
 
     // Определяем направление прокрутки (вверх или вниз)
     var delta = event.originalEvent.deltaY;
@@ -139,11 +145,16 @@ $(document).ready(function () {
     var scrollTo = targetSection.offset().top - headerHeight;
 
     // Выполняем плавную прокрутку к новой секции
+    isScrolling = true; // Устанавливаем флаг анимации прокрутки
     $("html, body").animate(
       {
         scrollTop: scrollTo,
       },
-      800
-    ); // 800 - время анимации в миллисекундах
+      800,
+      function () {
+        // По завершению анимации снимаем флаг анимации прокрутки
+        isScrolling = false;
+      }
+    );
   }
 });
