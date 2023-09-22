@@ -950,7 +950,7 @@ a {
   }
 
   .slider {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -1008,7 +1008,7 @@ a {
     width: 105%;
   }
   .slider {
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
   }
 }
