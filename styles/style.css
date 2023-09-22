@@ -129,7 +129,7 @@ a {
 }
 
 .main {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .ti-li {
   margin-bottom: 40px;
@@ -944,6 +944,14 @@ a {
   .con__ad-tl {
     display: none;
   }
+
+  .home {
+    margin-top: 40px;
+  }
+
+  .slider {
+    width: 80%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -998,5 +1006,9 @@ a {
 
   .adva__list-item {
     width: 105%;
+  }
+  .slider {
+    width: 90%;
+    margin-top: 20px;
   }
 }
