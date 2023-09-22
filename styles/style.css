@@ -943,6 +943,10 @@ a {
     display: none;
   }
 
+  .sect-p {
+    margin-left: 0;
+  }
+
   .home {
     margin-top: 40px;
   }
