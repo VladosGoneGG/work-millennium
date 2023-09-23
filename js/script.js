@@ -89,6 +89,18 @@ function sendMail(event) {
     // alert("Enter all fields");
     return;
   }
+
+  // Поля заполнены успешно, открываем модальное окно "Успешно отправлено"
+  const successModal = document.getElementById("successModal");
+  const successModalCloseButton = document.getElementById(
+    "successModalCloseButton"
+  );
+
+  successModal.style.display = "block";
+  successModalCloseButton.onclick = function () {
+    successModal.style.display = "none";
+  };
+
   let params = {
     name,
     tel,
