@@ -86,7 +86,7 @@ function sendMail(event) {
         modal.style.display = "none";
       }
     };
-    // alert("Enter all fields");
+
     return;
   }
 
@@ -118,7 +118,6 @@ function sendMail(event) {
       $("#phone").val("");
       $("#email").val("");
       $("#message").val("");
-      alert("Email has been sent");
     })
     .catch((err) => console.log(err));
 }
