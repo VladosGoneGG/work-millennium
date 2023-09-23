@@ -48,18 +48,18 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-  // burger
+// burger
 const menuBtn = document.querySelector(".menu__btn-burg");
 const menu = document.querySelector(".nav__list");
 const body = document.querySelector("body");
 
-menuBtn.addEventListener("click", () =>  toogleBurger());
+menuBtn.addEventListener("click", () => toogleBurger());
 
 const toogleBurger = () => {
-   menu.classList.toggle("nav__list--active");
+  menu.classList.toggle("nav__list--active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("scroll");
-}
+};
 
 // mail
 function sendMail(event) {
@@ -70,8 +70,23 @@ function sendMail(event) {
   const tel = $("#phone").val();
   const email = $("#email").val();
   const message = $("#message").val();
-  if(!name || !tel || !email || !message){
-    alert("Enter all fields");
+  const modal = document.getElementById("myModal");
+  const closeModalButton = document.getElementById("closeModal");
+  const modalCloseButton = document.getElementById("modalCloseButton");
+  if (!name || !tel || !email || !message) {
+    modal.style.display = "block";
+    closeModalButton.onclick = function () {
+      modal.style.display = "none";
+    };
+    modalCloseButton.onclick = function () {
+      modal.style.display = "none";
+    };
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    // alert("Enter all fields");
     return;
   }
   let params = {
@@ -96,14 +111,17 @@ function sendMail(event) {
     .catch((err) => console.log(err));
 }
 
-function offSetTop(selector){
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(selector).offset().top
-    }, 2000);
-    toogleBurger();
-  }
+function offSetTop(selector) {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(selector).offset().top,
+    },
+    2000
+  );
+  toogleBurger();
+}
 
- $("#link-1").click(() => offSetTop("#section1"));
- $("#link-2").click(() => offSetTop("#section2"));
- $("#link-3").click(() => offSetTop("#section4"));
- $("#link-5").click(() => offSetTop("#section5"));
+$("#link-1").click(() => offSetTop("#section1"));
+$("#link-2").click(() => offSetTop("#section2"));
+$("#link-3").click(() => offSetTop("#section4"));
+$("#link-5").click(() => offSetTop("#section5"));
