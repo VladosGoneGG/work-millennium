@@ -15,12 +15,10 @@ body {
   color: black;
   background-color: whitesmoke;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
-  /* font-family: 'Raleway', sans-serif;
-  font-family: 'Bitter', serif; */
 }
 body.scroll {
   overflow: hidden;
@@ -167,11 +165,12 @@ a {
 }
 
 .sect-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Heebo", sans-serif;
+  margin: 25px 0 25px 0;
   text-transform: uppercase;
   color: #d97b02;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .sect-p {
@@ -219,15 +218,15 @@ a {
 }
 
 .adva-title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Heebo", sans-serif;
   text-transform: uppercase;
   color: #d97b02;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .complex-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 18px;
   margin: 10px;
 }
@@ -237,7 +236,7 @@ a {
 }
 
 .actual__list-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 18px;
   margin: 10px;
 }
@@ -272,7 +271,7 @@ a {
 }
 
 .gallery-p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
@@ -468,7 +467,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(255, 255, 255, 0.814),
       rgba(255, 255, 255, 0.814)
     ),
@@ -477,7 +476,7 @@ a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 5%;
+  border-radius: 5%; */
 }
 
 .reviwes__videos {
@@ -513,14 +512,14 @@ a {
 }
 
 .videos__list-item h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Heebo", sans-serif;
   color: #d97b02;
   font-family: 18;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .videos__list-item h5 {
-  font-family: "Bitter", serif;
+  font-family: "Heebo", sans-serif;
   color: #50575e;
   font-family: 16;
 }
@@ -542,6 +541,7 @@ a {
 
 .us-titl {
   display: flex;
+  margin: 25px 0 25px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -592,30 +592,28 @@ a {
 }
 
 .contact-form-page input {
-  border: 2px solid #d97b02;
+  border: 1px solid #d97b02;
   padding: 5px;
-  border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
 }
 
 .contact-form-page textarea {
-  border: 2px solid #d97b02;
-  border-radius: 10px;
+  border: 1px solid #d97b02;
   padding: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
 }
 
 .contact-form-page label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   color: #d97b02;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -635,16 +633,16 @@ a {
 }
 
 .con__ad-tl {
-  font-family: "Raleway", sans-serif;
+  font-family: "Heebo", sans-serif;
   color: #d97b02;
   margin-bottom: 50px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.6;
 }
 
 .con-ad-t {
-  font-family: "Raleway", sans-serif;
+  font-family: "Heebo", sans-serif;
   color: #d97b02;
   font-size: 17px;
   font-weight: 400;
@@ -697,7 +695,7 @@ a {
 
 .foot-text {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -841,9 +839,6 @@ a {
   .nav__list {
     gap: 20px;
   }
-  .gallery__inner {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .gallery__text {
     margin-bottom: 10px;
   }
@@ -863,6 +858,10 @@ a {
 }
 
 @media (max-width: 860px) {
+  .gallery__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .top_leng {
     display: flex;
   }
@@ -1031,6 +1030,16 @@ a {
   .adva__lists {
     width: 75%;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .videos__list-item {
+    background-color: whitesmoke;
+    box-shadow: none;
+    gap: 0px;
+  }
+
+  .maps {
+    margin-top: 20px;
   }
 
   .complex-item {
